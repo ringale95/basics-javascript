@@ -1,5 +1,5 @@
 # learn-js-basics
-Basics of JS
+Basics of Javascript.
 
 What is JS?
 - JS can help to build web and mob application, chat and cli, games, video streaming services
