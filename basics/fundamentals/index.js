@@ -118,6 +118,10 @@ if (day = 2 && day > 1) {
     console.log(day);
 }
 
+/**
+ * Logs integers from 2 up to (but not including) n for which `isPrime(i)` is falsy.
+ * @param {number} n - Exclusive upper bound; integers < n and >= 2 will be evaluated.
+ */
 function showPrimes(n) {
     for (let i = 2; i < n; i++){
         if (!isPrime(i))
@@ -125,6 +129,11 @@ function showPrimes(n) {
     }
 }
 
+/**
+ * Check if `n` has a divisor between 2 and n - 1.
+ * @param {number} n - The integer to inspect for divisors.
+ * @returns {false|undefined} `false` if a divisor is found (i.e., `n` is composite), `undefined` otherwise.
+ */
 function isPrime(n) {
     for (let i = 2; i < n; i++){
         if(n % i == 0) return false;
